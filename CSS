@@ -1,10 +1,9 @@
-/* Estilos Gerais */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -14,12 +13,11 @@ body {
     margin: 20px auto;
     overflow: hidden;
     padding: 20px;
-    background-color: #ffffff; /* Fundo branco sólido para o conteúdo */
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para destacar o container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Cabeçalho */
 header {
     background: #333;
     color: #fff;
@@ -33,7 +31,6 @@ header img {
     margin-bottom: 10px;
 }
 
-/* Menu de Navegação */
 nav ul {
     padding: 0;
     margin: 0;
@@ -58,7 +55,6 @@ nav ul li a:hover {
     background: #0779e4;
 }
 
-/* Conteúdo Principal */
 main {
     padding: 20px 0;
 }
@@ -79,7 +75,6 @@ h2 {
     margin-top: 30px;
 }
 
-/* Estilos da Galeria de Imagens */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +105,6 @@ h2 {
     color: #555;
 }
 
-/* Estilos para Listas e Links */
 .links-list {
     list-style: none;
     padding: 0;
@@ -135,7 +129,6 @@ h2 {
     font-weight: bold;
 }
 
-/* Estilos para Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -160,7 +153,6 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Estilos do Formulário */
 form {
     background: #fafafa;
     padding: 20px;
@@ -185,7 +177,7 @@ form {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    box-sizing: border-box;
 }
 
 .form-group textarea {
@@ -216,7 +208,6 @@ form {
     background: #065b9c;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 20px;
