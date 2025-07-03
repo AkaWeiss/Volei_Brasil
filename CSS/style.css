@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -14,9 +14,9 @@ body {
     margin: 20px auto;
     overflow: hidden;
     padding: 20px;
-    background-color: #ffffff; /* Fundo branco sólido para o conteúdo */
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave para destacar o container */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Cabeçalho */
@@ -79,7 +79,7 @@ h2 {
     margin-top: 30px;
 }
 
-/* Estilos da Galeria de Imagens */
+/* --- ESTILO CORRIGIDO DA GALERIA DE IMAGENS --- */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -91,23 +91,26 @@ h2 {
 .gallery-item {
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 8px;
     text-align: center;
-    width: 300px;
+    width: 300px; /* Largura fixa para cada item */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Garante que a imagem não saia dos cantos arredondados */
 }
 
 .gallery-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 100%; /* Imagem ocupa 100% da largura do item */
+    height: 220px; /* Altura fixa para TODAS as imagens */
+    object-fit: cover; /* ESSENCIAL: Redimensiona a imagem para cobrir a área, sem distorcer. Pode cortar um pouco, mas mantém o tamanho uniforme. */
+    display: block;
 }
 
 .gallery-item p {
-    margin-top: 10px;
+    padding: 15px;
+    margin: 0;
     font-size: 0.9em;
     color: #555;
+    min-height: 50px; /* Garante que a área de texto tenha uma altura mínima */
 }
 
 /* Estilos para Listas e Links */
@@ -185,7 +188,7 @@ form {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    box-sizing: border-box;
 }
 
 .form-group textarea {
