@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Mundo do Vôlei</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fale Conosco</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="regras.html">Regras e Fundamentos</a></li>
+                <li><a href="imagens.html">Imagens</a></li>
+                <li><a href="links.html">Links Úteis</a></li>
+                <li><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Tem alguma dúvida, sugestão ou crítica? Use o formulário abaixo para entrar em contato conosco.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome aqui">
+                </div>
+                
+                <div class="form-group">
+                    <label>Motivo do Contato:</label>
+                    <input type="radio" id="duvida" name="motivo" value="Dúvida" checked> <label for="duvida" class="radio-label">Dúvida</label>
+                    <input type="radio" id="sugestao" name="motivo" value="Sugestão"> <label for="sugestao" class="radio-label">Sugestão</label>
+                    <input type="radio" id="critica" name="motivo" value="Crítica"> <label for="critica" class="radio-label">Crítica</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="posicao">Qual sua posição favorita no vôlei?</label>
+                    <select id="posicao" name="posicao">
+                        <option value="" disabled selected>-- Selecione uma opção --</option>
+                        <option value="Levantador">Levantador</option>
+                        <option value="Oposto">Oposto</option>
+                        <option value="Ponteiro">Ponteiro</option>
+                        <option value="Central">Central</option>
+                        <option value="Libero">Líbero</option>
+                        <option value="Nao_jogo">Não jogo, só assisto</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Enviar Mensagem</button>
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>Trabalho de ADS - Weslei Sebastião Martins Ribeiro Filho - 2025</p>
+    </footer>
+</body>
+</html>
